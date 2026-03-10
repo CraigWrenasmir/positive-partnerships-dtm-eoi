@@ -181,7 +181,40 @@
       font-size: 0.97rem;
     }
 
-    /* ── Wufoo form iframe ── */
+    /* ── Download buttons ── */
+    .download-buttons {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 28px;
+    }
+
+    .dl-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #712d90;
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 22px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: background 0.2s;
+      flex: 1;
+      min-width: 220px;
+    }
+
+    .dl-btn:hover { background: #431b56; }
+
+    .dl-btn svg {
+      width: 20px;
+      height: 20px;
+      fill: #fff;
+      flex-shrink: 0;
+    }
+
+    /* ── Wufoo form ── */
     .form-wrapper {
       background: #fff;
       border-radius: 10px;
@@ -250,6 +283,17 @@
           Please complete the form below to register your expression of interest.
           All fields marked with an asterisk (*) are required.
         </p>
+      </div>
+
+      <div class="download-buttons">
+        <a class="dl-btn" href="Delivery-Team-Member-role-description.pdf" download>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 7h14v2H5v-2z"/></svg>
+          Delivery Team Member Role Description
+        </a>
+        <a class="dl-btn" href="Delivery-Team-Member-Information.pdf" download>
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 7h14v2H5v-2z"/></svg>
+          Delivery Team Member Information
+        </a>
       </div>
 
       <div class="form-wrapper">
